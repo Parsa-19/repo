@@ -1,0 +1,9 @@
+
+
+
+
+def func(name, _len):
+	return name, len(_len)
+
+x = map(func, ['1', '22', '333', '4444'])
+print(x)
