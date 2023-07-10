@@ -1,0 +1,26 @@
+# this is a function run-time decorator
+
+import time
+
+def decor_run_time(origin):
+	def wrapper(*args):
+		t1 = time.time()
+		origin(*args)
+		t2 = time.time()
+		return t2 - t1 
+	return wrapper
+
+@decor_run_time
+def while_test(times):
+	while i < times:
+		print("while : ".format(i))
+
+@decor_run_time
+def for_test(times):
+	for i in range(times):
+		print("for : ". format(i))
+
+times = input("how many times would you like to print and test them : ")
+while_test()
+for_test()
+

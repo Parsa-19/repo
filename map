@@ -1,0 +1,6 @@
+it was sepose to be a map for rabbits farm
+
+I'm ganna write some code here:
+for i in range(100)
+	print(f"this is my {i}th message on this terminal")
+
