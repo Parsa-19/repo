@@ -1,3 +1,11 @@
+#autenticate with the password, otherwise it wont run the program then
+pass = input("pass : ")
+while pass == 123:
+	pass
+
+
+
+
 modified
 # this is a function run-time decorator
 
